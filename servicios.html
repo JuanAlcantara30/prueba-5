@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Nuestros Servicios - Clínica Dental Premium{% endblock %}
+
+{% block content %}
+<div class="animate-up" style="max-width: 800px; margin: 4rem auto; text-align: center;">
+    <h2 class="font-outfit" style="font-size: 2.5rem; margin-bottom: 3rem; color: var(--primary);">Servicios Disponibles</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="card">
+            <h3>Blanqueamiento</h3>
+            <p>Resultados visibles desde la primera sesión con tecnología láser.</p>
+        </div>
+        <div class="card">
+            <h3>Ortodoncia</h3>
+            <p>Soluciones discretas como Invisalign y brackets estéticos.</p>
+        </div>
+        <div class="card">
+            <h3>Limpieza Dental</h3>
+            <p>Procedimiento indoloro para mantener tu sonrisa perfecta.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

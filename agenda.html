@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Agendar Cita - Dra. Sabrinsky Flores{% endblock %}
+
+{% block content %}
+<div class="animate-up" style="max-width: 600px; margin: 4rem auto; padding: 0 1rem;">
+    <h2 class="font-outfit" style="font-size: 2.5rem; margin-bottom: 2rem; color: var(--primary); text-align: center;">Tu sonrisa merece lo mejor.</h2>
+    <p style="text-align: center; margin-bottom: 3rem; color: var(--text-muted);">Completa el formulario y nuestro asistente de WhatsApp te confirmará en segundos.</p>
+    
+    <div class="service-card" style="text-align: left; padding: 3rem; background: var(--surface);">
+        <form method="POST">
+            <div style="margin-bottom: 1.5rem;">
+                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Nombre Completo</label>
+                <input type="text" name="nombre" placeholder="Juan Pérez" style="width: 100%; padding: 1rem; border: 1px solid var(--border); border-radius: 8px;" required>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Teléfono / WhatsApp</label>
+                <input type="text" name="telefono" placeholder="+1 809 596 9133" style="width: 100%; padding: 1rem; border: 1px solid var(--border); border-radius: 8px;" required>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Servicio</label>
+                <select name="servicio" style="width: 100%; padding: 1rem; border: 1px solid var(--border); border-radius: 8px;" required>
+                    <option value="" disabled selected>Elige un tratamiento</option>
+                    <option value="Limpieza">Limpieza Dental Profesional</option>
+                    <option value="Evaluacion">Evaluación Preventiva</option>
+                    <option value="Radiografia">Radiografía Digital</option>
+                    <option value="Estetica">Estética Dental</option>
+                    <option value="Extraccion">Extracción Segura</option>
+                </select>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
+                <div>
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Fecha</label>
+                    <input type="date" name="fecha" style="width: 100%; padding: 1rem; border: 1px solid var(--border); border-radius: 8px;" required>
+                </div>
+                <div>
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Hora</label>
+                    <input type="time" name="hora" style="width: 100%; padding: 1rem; border: 1px solid var(--border); border-radius: 8px;" required>
+                </div>
+            </div>
+
+            <button type="submit" class="cta-button" style="width: 100%; border: none; font-size: 1.15rem; cursor: pointer;">Confirmar y Agendar</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

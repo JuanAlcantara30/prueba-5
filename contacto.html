@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Contacto - Clínica Dental Premium{% endblock %}
+
+{% block content %}
+<div class="animate-up" style="max-width: 800px; margin: 4rem auto; text-align: center;">
+    <h2 class="font-outfit" style="font-size: 2.5rem; margin-bottom: 2rem; color: var(--primary);">Estamos para Ayudarte</h2>
+    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 4rem;">Contáctanos por cualquiera de nuestros canales para consultas personalizadas.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem;">
+        <div class="card">
+            <h3>WhatsApp</h3>
+            <p>+54 9 11 1234 5678</p>
+        </div>
+        <div class="card">
+            <h3>Email</h3>
+            <p>hola@clinica-premium.com</p>
+        </div>
+        <div class="card">
+            <h3>Ubicación</h3>
+            <p>Av. Santa Fe 1234, CABA</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Cita Confirmada - Dra. Sabrinsky Flores{% endblock %}
+
+{% block content %}
+<div class="animate-up" style="max-width: 800px; margin: 6rem auto; text-align: center; padding: 0 1rem;">
+    <div style="font-size: 4rem; color: #10b981; margin-bottom: 2rem;">✅</div>
+    <h1 class="font-outfit" style="font-size: 3rem; color: var(--primary);">¡Cita Agendada!</h1>
+    <p style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 3rem;">Gracias por confiar en nosotros, <strong>{{ nombre }}</strong>. Te esperamos el día <strong>{{ fecha }}</strong> a las <strong>{{ hora }}</strong>.</p>
+    
+    <div style="margin-bottom: 1rem; color: var(--accent); font-weight: 600;">DEMO: ASÍ FUNCIONARÁ EL WHATSAPP</div>
+    <div class="whatsapp-widget" style="margin-top: 2rem; border-color: var(--primary); background: #e5e7eb;">
+        <div style="background: #25d366; color: white; padding: 1rem; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;">
+            <p style="font-weight: 600;">Asistente Sabrinsky Flores</p>
+        </div>
+        <div class="chat-bubble bot">Hola 👋 Tu cita para el {{ fecha }} a las {{ hora }} ha sido confirmada en el calendario.</div>
+        <div class="chat-bubble bot">¿Deseas activar recordatorios por audio? 🎤</div>
+        <div class="chat-bubble" style="background: #dcf8c6; float: right; align-self: flex-end; width: fit-content; border-bottom-right-radius: 2px;">Sí, por favor.</div>
+    </div>
+
+    <div style="display: flex; gap: 2rem; justify-content: center; margin-top: 4rem;">
+        <a href="/" class="cta-button" style="background: transparent; border: 2px solid var(--primary); color: var(--primary) !important;">Volver al Inicio</a>
+        <a href="https://wa.me/8095969133" target="_blank" class="cta-button">Hablar Real por WhatsApp</a>
+    </div>
+</div>
+{% endblock %}

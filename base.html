@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Clínica Dental Premium{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/dental-chair.png">
+</head>
+<body>
+    <nav>
+        <a href="/" class="brand">Sabrinsky<span>Flores</span></a>
+        <div class="nav-links">
+            <a href="/">Inicio</a>
+            <a href="/servicios">Servicios</a>
+            <a href="/contacto">Contacto</a>
+            <a href="/demo">Demo Chat</a>
+            <a href="/agenda" class="cta-button">Agendar Cita</a>
+        </div>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="footer-brand">Dra. Sabrinsky Flores</div>
+        <p>Calle Los Próceres esq. C/2da #14, Santo Domingo, RD | Tel: (809) 596-9133</p>
+        <p style="margin-top: 2rem; font-size: 0.85rem;">&copy; 2026 Clínica Dental Sabrinsky Flores - Powered by DentiAgent AI</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
