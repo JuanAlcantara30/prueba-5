@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}Dra. Sabrinsky Flores | Clínica Dental y Estética - Santo Domingo{% endblock %}
+
+{% block content %}
+<!-- Section: Hero - Premium Conversion -->
+<section class="hero animate-up">
+    <div class="hero-content">
+        <h1 class="font-outfit">Sonríe con <span style="color: var(--accent);">confianza.</span></h1>
+        <p>Atención dental personalizada, tecnología digital avanzada y resultados naturales en el corazón de Santo Domingo.</p>
+        <div style="display: flex; gap: 1.5rem;">
+            <a href="/agenda" class="cta-button" style="font-size: 1.15rem; padding: 1.25rem 2.5rem;">Agendar Cita Ahora</a>
+            <a href="https://wa.me/8095969133" target="_blank" class="cta-button" style="background: transparent; color: var(--primary) !important; border: 2px solid var(--primary);">Hablar por WhatsApp</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=2070" alt="Consultorio Dental Boutique">
+    </div>
+</section>
+
+<!-- Section: Proof (Google 5.0) -->
+<section class="reviews-banner animate-up">
+    <div class="star-rating">★★★★★</div>
+    <h2 class="font-outfit" style="color: white; font-size: 2.25rem;">5.0 Estrellas | 198 Reseñas en Google</h2>
+    <p style="color: #d1d5db; font-size: 1.25rem; margin-top: 1rem;">"La mejor experiencia que he vivido con un dentista. Te escucha con el corazón."</p>
+</section>
+
+<!-- Section: Services -->
+<section class="section container">
+    <div class="section-title animate-up">
+        <h2 class="font-outfit">Exexcelencia en cada <span style="color: var(--accent);">tratamiento</span></h2>
+        <p>Cuidamos la salud bucal de toda la familia con un enfoque preventivo y estético.</p>
+    </div>
+    
+    <div class="grid-services animate-up">
+        <div class="service-card">
+            <h3>Limpieza Dental</h3>
+            <p>Higiene profesional indolora para una sonrisa perfecta.</p>
+        </div>
+        <div class="service-card">
+            <h3>Evaluación Preventiva</h3>
+            <p>Detección a tiempo para evitar tratamientos costosos.</p>
+        </div>
+        <div class="service-card">
+            <h3>Radiografía Digital</h3>
+            <p>Tecnología avanzada para diagnósticos de precisión milimétrica.</p>
+        </div>
+        <div class="service-card">
+            <h3>Estética Dental</h3>
+            <p>Diseño de sonrisa y blanqueamiento asistido por IA.</p>
+        </div>
+        <div class="service-card">
+            <h3>Extracciones</h3>
+            <p>Procedimientos seguros y cómodos con calidez humana.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Section: About Dr. Sabrinsky -->
+<section class="section" style="background: var(--surface);">
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+        <div class="hero-image" style="aspect-ratio: 1/1; border-radius: 100%;">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71f1536b1d?auto=format&fit=crop&q=80&w=2070" alt="Dra. Sabrinsky Flores">
+        </div>
+        <div>
+            <h2 class="font-outfit" style="font-size: 2.75rem; color: var(--primary);">Liderada por una <br><span style="color: var(--accent);">Mujer Empresaria.</span></h2>
+            <p style="margin-top: 1.5rem; font-size: 1.15rem; color: var(--text-muted);">En la Clínica Dental Dra. Sabrinsky Flores, te acompañamos con experiencia, calidez y respeto. Más que dentistas, somos una bendición de personas que te escuchan con el corazón.</p>
+            <div style="margin-top: 2rem; padding: 1.5rem; background: white; border-left: 5px solid var(--accent); border-radius: 8px;">
+                <p style="font-style: italic; color: var(--primary);">"Llegué con temor... y esta vez fue la mejor experiencia de mi vida." - Lisbeth Acosta</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section: WhatsApp Simulation Interaction -->
+<section class="section animate-up">
+    <div class="section-title">
+        <h2 class="font-outfit">Agenda en <span style="color: var(--accent);">segundos.</span></h2>
+        <p>Prueba nuestro asistente inteligente antes de visitarnos.</p>
+    </div>
+    
+    <div class="whatsapp-widget">
+        <div style="background: var(--primary); color: white; padding: 1rem; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem -2rem;">
+            <p style="font-weight: 600;">Asistente DentiAgent AI</p>
+        </div>
+        <div class="chat-bubble bot">Hola 👋 ¿Qué servicio necesitas?</div>
+        <div class="chat-bubble bot" style="background: #e1f5fe;">Quiero una limpieza dental para mañana.</div>
+        <div class="chat-bubble bot">Perfecto 😊 Tengo disponible 3:00 PM y 5:00 PM. ¿Cuál prefieres?</div>
+        <a href="/demo" class="cta-button" style="width: 100%; display: block; text-align: center; margin-top: 2rem;">Probar Chat Completo</a>
+    </div>
+</section>
+
+<!-- Section: Location & Final CTA -->
+<section class="section" style="text-align: center;">
+    <h1 class="font-outfit" style="font-size: 3.5rem; color: var(--primary);">Tu sonrisa merece lo mejor.</h1>
+    <p style="margin-bottom: 3rem; font-size: 1.25rem;">Visítanos en Calle Los Próceres esq. C/2da #14, Santo Domingo.</p>
+    <div style="display: flex; gap: 2rem; justify-content: center;">
+        <a href="/agenda" class="cta-button" style="font-size: 1.5rem; padding: 1.5rem 3.5rem;">Agendar Ahora</a>
+    </div>
+</section>
+{% endblock %}
